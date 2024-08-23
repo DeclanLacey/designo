@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+    -webkit-text-size-adjust: none; /* for iOS Safari */
+    text-size-adjust: none; /* for other mobile browsers */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+          scroll-behavior: smooth;
+    }
+  }
+/* 
+:focus:not(:focus-visible) {
+    outline: none;
+} */
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
