@@ -1,5 +1,12 @@
 body {
     margin: 0px;
+    --peach: #E7816B;
+    --light-peach: #FFAD9B;
+    --black: #1D1C1E;
+    --dark-grey: #333136;
+    --white: #FFFFFF;
+    --light-grey: #F1F3F5;
+    font-family: "Jost", sans-serif;
 }
 
 *,
