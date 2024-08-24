@@ -1,0 +1,46 @@
+.contact-link-card {
+    position: relative;
+    width: 88%;
+    background-color: var(--peach);
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    background-image: url("/shared/desktop/bg-pattern-call-to-action.svg");
+    background-position: center;
+    margin: 0 auto;
+}
+
+.contact-link-card-title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 0px;
+}
+
+.contact-link-card-text {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+    max-width: 550px;
+}
+
+.contact-link-card-link {
+    width: 150px;
+    height: 55px;
+    background-color: var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+}
