@@ -11,13 +11,11 @@
     color: var(--white);
     padding-left: 22px;
     padding-right: 22px;
-    z-index: -1;
 }
 
 .home-page-hero-img {
     width: 680px;
     overflow: hidden;
-    
 }
 
 .home-page-hero-img-container {
@@ -25,8 +23,7 @@
     width: fit-content;
     width: 600px;
     position: absolute;
-    bottom: -360px;
-
+    bottom: 0px;
 }
 
 .home-page-hero-title {
@@ -63,7 +60,16 @@
 }
 
 .home-page-design-links {
-    z-index: 2;
     background-color: var(--white);
     padding-top: 100px;
+}
+
+.home-page-values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 110px;
+    margin-bottom: 0px;
 }
