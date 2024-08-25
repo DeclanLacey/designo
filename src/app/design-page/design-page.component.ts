@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Data } from '@angular/router';
 
 @Component({
   selector: 'app-design-page',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './design-page.component.css'
 })
 export class DesignPageComponent {
+
+  constructor(private activatedRoute: ActivatedRoute) {
+    const data: Data = this.activatedRoute.snapshot.data
+
+  }
 
 }
