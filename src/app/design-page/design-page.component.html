@@ -1,1 +1,20 @@
-<p>design-page works!</p>
+<div class="design-page">
+    <section class="design-page-title-section">
+        <h1 class="design-page-title">{{titleData[0]}}</h1>
+        <p class="design-page-subtitle">{{titleData[1]}}</p>
+    </section>
+
+    <section class="design-page-projects-container">
+        <ng-container *ngFor="let project of data">
+            <div class="design-page-project">
+                <img class="design-page-project-image" src="{{project.image}}" />
+                <div class="design-page-project-content">
+                    <h2 class="design-page-project-title">{{project.name}}</h2>
+                    <p class="design-page-project-desc">{{project.desc}}</p>
+                </div>
+            </div>
+        </ng-container>
+    </section>
+
+    <app-design-card></app-design-card>
+</div>

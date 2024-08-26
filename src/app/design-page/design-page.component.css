@@ -1,0 +1,70 @@
+.design-page-title-section {
+    background-color: var(--peach);
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    color: var(--white);
+    background-image:url("/shared/desktop/bg-pattern-call-to-action.svg");
+    background-position: bottom left;
+    margin-bottom: 60px;
+}
+
+.design-page-title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.design-page-subtitle {
+    font-size: 1.5rem;
+}
+
+.design-page-projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.design-page-project {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.design-page-project-image {
+    width: 330px;
+    max-height: 320px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.design-page-project-content {
+    background-color: var(--light-grey);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.design-page-project-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--peach);
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.design-page-project-desc {
+    font-size: 1.6rem;
+    
+}
