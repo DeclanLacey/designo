@@ -1,0 +1,55 @@
+.location-page {
+    width: 100%;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.location-img {
+    min-width: 100%;
+    object-fit: cover;
+    height: 320px;
+}
+
+.content-container {
+    background-color: var(--light-grey);
+    width: 100%;
+    background-image: url("/shared/desktop/bg-pattern-two-circles.svg");
+    background-position: center;
+    padding-bottom: 40px;
+}
+
+.location-page-content-container {
+    margin-bottom: 40px;
+}
+
+.location-title {
+    color: var(--peach);
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-top: 70px;
+}
+
+.location-page-content-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.location-content-text {
+    margin-top: 8px;
+    font-size: 1.5rem;
+    line-height: 10px;
+}
+

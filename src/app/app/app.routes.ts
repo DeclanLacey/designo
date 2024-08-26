@@ -6,6 +6,7 @@ import { HomePageComponent } from '../home-page/home-page.component';
 import { DesignPageComponent } from '../design-page/design-page.component';
 
 
+
 export const routes: Routes = [
     {
         path: 'about',
