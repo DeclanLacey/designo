@@ -14,6 +14,8 @@
     background-image: url("/shared/desktop/bg-pattern-call-to-action.svg");
     background-position: center;
     margin: 0 auto;
+    margin-top: -250px;
+    margin-bottom: 60px;
 }
 
 .contact-link-card-title {
@@ -43,4 +45,8 @@
     font-size: 1.5rem;
     border-radius: 10px;
     font-weight: 500;
+}
+
+.active-link {
+   display: none;
 }
