@@ -1,0 +1,45 @@
+.about-page-container {
+    margin-bottom: 300px;
+}
+
+.about-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-content-peach,
+.about-content-white {
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 55px;
+    padding-top: 30px;
+}
+
+.about-content-peach {
+    background-color: var(--peach);
+    color: white;
+    background-image: url("/about/mobile/bg-pattern-hero-about-mobile.svg");
+    background-position: top;
+}
+
+.about-content-white {
+    background-color: var(--light-grey);
+    background-image: url("/shared/desktop/bg-pattern-three-circles.svg");
+
+}
+
+.peach-title {
+    color: var(--peach);
+}
+
+.about-content-section-title {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.about-content-text {
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
