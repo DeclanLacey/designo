@@ -2,5 +2,24 @@
     <a routerLink="" routerLinkActive="true">
         <img class="header-logo" src="/shared/desktop/logo-dark.png" />
     </a>
-    <img class="header-burger-icon" src="/shared/mobile/icon-hamburger.svg" />
+    
+    <div>
+        <input (click)="toggleBurgerMenu()" type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" >
+        <label for="checkbox1">
+            <div class="hamburger hamburger1">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+            </div>
+        </label>
+    </div>
+
+    <aside *ngIf="burgerMenuOpen" class="burger-menu-container">
+        <nav class="burger-navbar">
+            <a (click)="closeBurgerMenu()" class="burger-link" routerLink="/about">our company</a>
+            <a (click)="closeBurgerMenu()" class="burger-link" routerLink="/locations">locations</a>
+            <a (click)="closeBurgerMenu()" class="burger-link" routerLink="/contact">contact</a>
+        </nav>
+    </aside>
 </header>

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -9,6 +9,29 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  burgerMenuOpen: boolean = false
+  burgerMenuCheckboxValue: any
 
+  ngOnInit(): void {
+    this.burgerMenuCheckboxValue = document.getElementById("checkbox1")!
+  }
+
+  toggleBurgerMenu() {
+    if (document.body.classList.contains("disable-scroll")){
+      document.body.classList.remove("disable-scroll")
+    }else {
+      document.body.classList.add("disable-scroll")
+    }
+
+    if (this.burgerMenuCheckboxValue.checked === true)
+    this.burgerMenuOpen = !this.burgerMenuOpen
+  }
+
+  closeBurgerMenu() {
+    this.burgerMenuCheckboxValue.checked = false
+    this.burgerMenuOpen = !this.burgerMenuOpen
+    document.body.classList.remove("disable-scroll")
+  }
+  
 }
