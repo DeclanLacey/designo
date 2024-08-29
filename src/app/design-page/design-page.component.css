@@ -21,6 +21,7 @@
 
 .design-page-subtitle {
     font-size: 1.5rem;
+    max-width: 400px;
 }
 
 .design-page-projects-container {
@@ -37,10 +38,12 @@
     text-align: center;
     margin-bottom: 40px;
     width: 90%;
+    max-width: 400px;
 }
 
 .design-page-project-image {
-    width: 330px;
+    width: 100%;
+    object-fit: cover;
     max-height: 320px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -67,4 +70,63 @@
 .design-page-project-desc {
     font-size: 1.6rem;
     
+}
+
+/* ////////////// media query /////////////// */
+
+@media (min-width: 700px) {
+
+    .design-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .design-card-section {
+        width: 100%;
+    }
+
+    .design-page-title-section {
+        width: 90%;
+        border-radius: 10px;
+        height: 250px;
+        padding-top: 0px;
+        margin-bottom: 100px;
+    }
+    .design-page-project {
+        max-width: initial;
+        flex-direction: row;
+    }
+
+    .design-page-title {
+        font-size: 4.8rem;
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+
+    .design-page-subtitle {
+        font-size: 1.6rem;
+    }
+
+    .design-page-project-content {
+        width: 50%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .design-page-project-title {
+        margin-bottom: 0px;
+    }
+
+    .design-page-project-image {
+        width: 50%;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
 }

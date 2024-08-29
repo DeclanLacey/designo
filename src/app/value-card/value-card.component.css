@@ -25,7 +25,7 @@
 }
 
 .value-card-img-container {
-    width: 200px;
+    min-width: 200px;
     position: relative;
 }
 
@@ -43,4 +43,22 @@
     transform: rotate(90deg);
 }
 
+/* //////////////// media query /////////////////// */
 
+@media (min-width: 700px) {
+    .value-card {
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .value-card-title {
+        margin-bottom: 5px;
+    }
+
+    .value-card-text {
+        line-height: 25px;
+    }
+}

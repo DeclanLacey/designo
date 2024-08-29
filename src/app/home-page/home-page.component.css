@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: flex-start;
     position: relative;
+    background-repeat: no-repeat;
     color: var(--white);
     padding-left: 22px;
     padding-right: 22px;
@@ -72,4 +73,41 @@
     width: 100%;
     margin-top: 110px;
     margin-bottom: 0px;
+}
+
+/* /////////////////// media query ////////////////// */
+
+
+
+@media (min-width: 700px) {
+
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-page-hero {
+        height: 840px;
+        width: 90%;
+        border-radius: 10px;
+    }
+    .home-page-hero-title {
+        font-size: 4.8rem;
+        line-height: 50px;
+        margin-top: 60px;
+    }
+
+    .home-page-hero-text {
+        font-size: 1.6rem;
+    }
+
+    .home-page-hero-img {
+        height: 390px;
+    }
+
+    .home-page-design-links {
+        width: 100%;
+    }
 }

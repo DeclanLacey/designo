@@ -72,3 +72,31 @@
 .active-link {
     display: none
 }
+
+@media (min-width: 700px) {
+
+    .design-cards-container {
+        width: 100%;
+    }
+    
+    .design-card-link {
+        height: 200px;
+    }
+
+    .web-design {
+        background-image: url("/home/tablet/image-web-design.jpg");
+    }
+    
+    .app-design {
+        background-image: url("/home/tablet/image-app-design.jpg");
+    }
+    
+    .graphic-design {
+        background-image: url("/home/tablet/image-graphic-design.jpg");
+    }
+
+    .design-card-title {
+        font-size: 4rem;
+        margin-bottom: 15px;
+    }
+}
