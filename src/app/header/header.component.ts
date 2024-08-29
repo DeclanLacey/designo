@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
       document.body.classList.add("disable-scroll")
     }
 
-    if (this.burgerMenuCheckboxValue.checked === true)
+    
     this.burgerMenuOpen = !this.burgerMenuOpen
   }
 
