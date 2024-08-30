@@ -11,6 +11,23 @@
     width: 202px;
 }
 
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--grey);
+    opacity: .8;
+    letter-spacing: 1px;
+}
+
 .burger-menu-container {
     top: 96px;
     width: 100%;
@@ -106,4 +123,27 @@
     transform-origin: 5%;
     transform: rotate(-45deg);
     width: 41px;
+}
+
+/* ////////////// media query /////////// */
+
+@media (min-width: 700px) {
+
+    .header-nav {
+        display: flex;
+    }
+
+    .header {
+        height: 140px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .burger-menu-container {
+        display: none;
+    }
+
+    .burger-menu-icon-container {
+        display: none;
+    }
 }

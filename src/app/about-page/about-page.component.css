@@ -43,3 +43,37 @@
     line-height: 25px;
     margin-bottom: 25px;
 }
+
+/* ////////////// media query /////////////// */
+
+@media (min-width: 700px) {
+
+    .about-page-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-content-peach,
+    .about-content-white {
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .about-section-container {
+        width: 90%
+    }
+
+    .about-content-peach {
+        margin-bottom: 80px;
+    }
+
+    .about-image {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}

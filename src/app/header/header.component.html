@@ -3,7 +3,7 @@
         <img class="header-logo" src="/shared/desktop/logo-dark.png" />
     </a>
     
-    <div>
+    <div class="burger-menu-icon-container">
         <input (click)="toggleBurgerMenu()" type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" >
         <label for="checkbox1">
             <div class="hamburger hamburger1">
@@ -22,4 +22,10 @@
             <a (click)="closeBurgerMenu( )" class="burger-link" routerLink="/contact">contact</a>
         </nav>
     </aside>
+
+    <nav class="header-nav">
+        <a class="nav-link" routerLink="/about">our company</a>
+        <a class="nav-link" routerLink="/locations">locations</a>
+        <a class="nav-link" routerLink="/contact">contact</a>
+    </nav>
 </header>
