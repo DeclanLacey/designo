@@ -1,11 +1,3 @@
-.design-cards-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
 .design-card-link {
     height: 250px;
     width: 90%;
@@ -75,9 +67,9 @@
 
 @media (min-width: 700px) {
 
-    .design-cards-container {
+    /* .design-cards-container {
         width: 100%;
-    }
+    } */
     
     .design-card-link {
         height: 200px;

@@ -135,8 +135,9 @@
 
     .header {
         height: 140px;
-        padding-right: 40px;
-        padding-left: 40px;
+        padding: 0px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .burger-menu-container {
@@ -145,5 +146,13 @@
 
     .burger-menu-icon-container {
         display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0px;
     }
 }
