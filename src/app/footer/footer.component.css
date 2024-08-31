@@ -88,10 +88,14 @@
         padding-bottom: 70px;
     }
     .footer-content {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 95%;
+        margin: 0 auto;
         display: grid;
         height: 200px;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 350px 1fr 1fr;
         grid-template-areas: 
         "logo    nav     nav   "  
         "line    line    line  "
@@ -139,5 +143,11 @@
         height: 100%;
         gap: 15px;
         margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer-content {
+        width: 90%;
     }
 }

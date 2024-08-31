@@ -18,6 +18,13 @@
     margin-bottom: 60px;
 }
 
+.contact-card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-link-card-title {
     font-size: 3.2rem;
     font-weight: 500;
@@ -61,5 +68,27 @@
 
     .contact-link-card-text {
         font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contact-link-card {
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 110px 0px 110px;
+        height: 290px;
+    }
+
+    .contact-card-text-container {
+        align-items: flex-start;
+    }
+
+    .contact-link-card-title {
+        text-align: left;
+    }
+
+    .contact-link-card-text {
+        text-align: left;
     }
 }
