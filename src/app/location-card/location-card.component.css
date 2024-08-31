@@ -47,3 +47,11 @@
 .circle-top {
     transform: rotate(90deg);
 }
+
+@media (min-width: 1440px) {
+    .location-card-section-container {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 85vw;
+    }
+}

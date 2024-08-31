@@ -96,3 +96,26 @@
 
 
 }
+
+@media (min-width: 1440px) {
+    .location-container {
+        flex-direction: row;
+        width: 85%;
+    }
+
+    .image-container {
+        width: 30%;
+    }
+
+    .content-container {
+        width: 70%;
+    }
+
+    .content-left {
+        flex-direction: row-reverse;
+    }
+
+    .content-container {
+        grid-template-columns: 300px 1fr;
+    }
+}

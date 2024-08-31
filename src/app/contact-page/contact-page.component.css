@@ -1,5 +1,8 @@
 .app-location-cards {
     margin-bottom: -210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-page-form-section {
@@ -20,14 +23,16 @@
 
 .contact-page-title {
     font-size: 3.2rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .contact-page-desc {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 40px;
+    max-width: 600px;
 }
 
 .contact-page-form {
@@ -76,6 +81,14 @@
     margin-top: 25px;
 }
 
+.contact-form-input:valid {
+    border-bottom: 2.5px solid white ;
+}
+
+.contact-form-text-area:valid {
+    border-bottom: 2.5px solid white ;
+}
+
 /* ///////////// media query ///////////// */
 
 @media (min-width: 700px) {
@@ -91,6 +104,7 @@
 
     .contact-page-title {
         font-size: 4.8rem;
+        text-align: left;
     }
 
     .contact-page-desc {
@@ -98,5 +112,35 @@
         font-size: 1.6rem;
     }
 
-    
+}
+
+@media (min-width: 1440px) {
+    .contact-page-form-section {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 480px;
+        background-position: left;
+    }
+
+    .contact-page-form {
+        align-items: flex-end;
+        width: 50%;
+        padding-right: 70px;
+    }
+
+    .contact-page-title {
+        font-size: 4.8rem;
+    }
+
+    .contact-page-desc {
+        font-size: 1.6rem;
+    }
+
+    .contact-page-text {
+        padding-right: 140px;
+        padding-left: 80px;
+    }
 }
