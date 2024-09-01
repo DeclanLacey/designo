@@ -54,12 +54,24 @@
     font-size: 1.5rem;
     border-radius: 10px;
     font-weight: 500;
+    transition-property: color backgroundColor;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in;
 }
 
 .active-link {
    display: none;
 }
 
+/* //////////////////// hover ////////////////// */
+
+.contact-link-card-link:hover {
+    background-color: #FFAD9B;
+    color: white;
+}
+
+
+/* ///////////////////// media query //////////////////// */
 @media (min-width: 700px) {
     .contact-link-card-title {
         font-size: 4rem;

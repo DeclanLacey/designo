@@ -9,8 +9,6 @@
     text-align: center;
 }
 
-
-
 .location-card-img-container {
     position: relative;
 }
@@ -38,6 +36,7 @@
     letter-spacing: 1px;
     padding: 18px;
     border-radius: 10px;
+    transition: opacity 400ms ease-in;
 }
 
 .circle-bottom {
@@ -47,6 +46,14 @@
 .circle-top {
     transform: rotate(90deg);
 }
+
+/* ///////////////// hover //////////////// */
+
+.location-card-link:hover {
+    opacity: .6;
+}
+
+/* //////////////////// media query //////////////// */
 
 @media (min-width: 1440px) {
     .location-card-section-container {

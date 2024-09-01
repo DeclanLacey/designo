@@ -57,6 +57,21 @@
     border-bottom-left-radius: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    transition-property:  background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+
+.hover-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 400ms ease-in;
+    border-radius: 15px;
 }
 
 .design-page-project-title {
@@ -148,6 +163,22 @@
 
 .active-link {
     display: none
+}
+
+/* /////////////////// hover ////////////////////// */
+
+.design-page-project-content:hover {
+    cursor: pointer;
+    background-color: var(--peach);
+    color: white;
+}
+
+.design-page-project-content:hover h2 {
+    color: white;
+}
+
+.hover-background:hover {
+    background-color: rgba(231, 129, 107, .6);
 }
 
 /* ////////////// media query /////////////// */
