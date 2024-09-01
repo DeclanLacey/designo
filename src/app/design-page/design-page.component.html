@@ -7,7 +7,7 @@
     <section class="design-page-projects-container">
         <ng-container *ngFor="let project of data">
             <div class="design-page-project">
-                <img class="design-page-project-image" src="{{project.image}}" />
+                <img class="design-page-project-image" src="{{project.image}}" alt="'Design for' + project.name"/>
                 <div class="design-page-project-content">
                     <h2 class="design-page-project-title">{{project.name}}</h2>
                     <p class="design-page-project-desc">{{project.desc}}</p>
